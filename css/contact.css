@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box; 
+  }
+  
+  .introtop {
+      font-family: "Prata", Times, serif;
+      text-transform: lowercase;
+  }
+  
+  body {
+      background: #F5998E;
+      margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: #8CD1D1;
+    transition: color .3s;
+}
+
+a:hover {
+    color: palegreen;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/* ~~~~~~~~ Nav styles ~~~~~~~~ */
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav li {
+    border: 1px solid black;
+    box-shadow: 5px 5px 2px #888888;
+    background-color: palegoldenrod;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.normal:after {
+    content: "home";
+}
+
+.normal:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+.port:after {
+    content: "consult";
+}
+
+.port:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+.lists:after {
+    content: "listicles";
+}
+
+.lists:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+.hung:after {
+    content: "who's\0020hungry?";
+}
+
+.hung:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+.contact:after {
+    content: "contact";
+}
+
+.contact:hover:after {
+    content:attr(title);
+    position: relative;
+}
+.stellarnav.mobile li a {
+    border-bottom: 1px solid palegreen;
+}
+
+.stellarnav .menu-toggle, .stellarnav .close-menu, .stellarnav .call-btn-mobile, .stellarnav .location-btn-mobile {
+text-transform: lowercase;
+color: palegoldenrod;
+}
+
+.bars {
+    color: #8CD1D1;
+}
+
+.stellarnav li a {
+    color: black;
+}
+
+/* ~~~~~~~~ Header styles ~~~~~~~~ */
+
+header {
+    text-align: center;
+    font-size: 6px;
+}
+
+.headcontain {
+position: relative;
+text-align: center;
+padding-top: 1em;
+max-width: 100%;
+padding-bottom: 1em;
+}
+
+.headcontain img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.headinfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: palegoldenrod;
+    line-height: 1.5;
+}
+
+/* ~~~~~~~~ Form styles ~~~~~~~~ */
+
+form {
+    display: block;
+}
+
+fieldset {
+    font-family: "EB Garamond", Times, serif;
+    border: transparent;
+}
+
+label {
+    border-bottom: 1px solid black;
+    margin-top: .5em;
+}
+
+.conhead {
+    border-bottom: 1px dashed black;
+    margin-bottom: 1em;
+}
+
+textarea, input {
+    margin-bottom: 1em;
+    background: palegoldenrod;
+    border: 1px solid black;
+    box-shadow: 1px 2px;
+    outline: none;
+}
+
+.content {
+    height: 70%;
+    width: 80%;
+}
+
+textarea::placeholder {
+color: black;
+font-size: smaller;
+}
+
+input[type=submit] {
+    border: 1px solid black;
+    box-shadow: 3px 4px;
+    transition: color .3s;
+}
+
+input[type=submit]:hover {
+    color: palegreen;
+}
+
+input[type="submit"]:after {
+    content: attr(value);
+}
+
+input[type="submit"]:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+footer {
+    padding-left: .5em;
+    border-top: solid black 1px;
+}
+
+/* ~~~~~~~~ Media Queries styles ~~~~~~~~ */
+
+
+@media (min-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        margin-bottom: 200px;
+    }
+
+    header {
+        text-align: center;
+        font-size: 7.5px;
+    }
+    
+    .headcontain {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 1em;
+    width: 50%;
+    max-width: 100%;
+    }
+    
+    .headcontain img {
+        border-radius: 50%;
+        margin-left: 1em;
+        width: 80%;
+    }
+    
+    .headinfo {
+        position: absolute;
+        width: 60%;
+        top: 52%;
+        left: 44%;
+        transform: translate(-50%, -50%);
+        color: palegoldenrod;
+        line-height: 1.5;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: palegoldenrod;
+        margin: 0 auto;
+        justify-content: space-between;
+    }    
+    
+    nav li {
+        border: none;
+        font-size: small;
+        color: black;
+        background-color: palegoldenrod;
+        box-shadow: none;  
+    }
+
+    form {
+        width: 50%;
+        margin-top: 1.5em;
+    }
+
+    footer {
+        height: 50px;
+        margin-top: 1em;
+        margin-bottom: 2px;
+        font-family: "Prata", Times, serif;
+        text-align: right;
+        padding-right: 1em;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+}

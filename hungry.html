@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who's Hungry?</title>
+  <link rel="stylesheet" href="css/normalizee.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="css/hungry.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap">
+  </head>
+
+  <body>
+
+    <nav>
+        <ul class="navbar">
+          <li><a href="project.html" title="let's go!" class="normal"></a></li>
+          <li><a href="#" title="my portfolio" class="port"></a></li>
+          <li><a href="listicle.html" title="wow yeah!" class="lists"></a></li>
+          <li><a href="hungry.html" title="I&nbsp;am!" class="hung"></a></li>
+          <li><a href="contact.html" title="fax me" class="contact"></a></li>
+        </ul>
+  </nav>
+
+<header>
+  <h1>Who's Hungry? &#8482;</h1>
+  <h2>AKA Raccoon Tamagotchi</h2>
+
+
+  <div class="mainpic">
+  <img src="images/hungrypix/headraci.png" alt="picofaraccoon" id="rac1">
+
+    <p class="scrip">Who's Hungry? &#8482;is a revolution in the world of animalcare gaming. On the go, on the not-go, your raccoon is your grouding constant,
+      always in need of a snarl, a cake-fight, or perhaps just a little song. Your raccoon will accompany you to the ends of the world (as long as there is data or Wi-Fi available)
+      and will need you, long after your kids don't anymore. Currently screening investors to get this puppy off the ground!</p>
+  </div>
+</header>
+
+<div class="flexgrid maincon">
+    <div class="card homescreen">
+      <img src="images/hungrypix/homescreen.png" alt="homescreen" id="homescreen" class="imgflex">
+      <p class="txt">Arrive to the homescreen where options abound!</p>
+    </div>
+
+    <div class="card born">
+        <img src="images/hungrypix/namscreen.png" alt="namescreen" id="namescreen" class="imgflex">
+        <p class="txt">When your raccoon is born, he is ready to name and to love!</p>
+    </div>
+
+    <div class="card bios">
+        <img src="images/hungrypix/bioscreen.png" alt="biocreen" id="bioscreen" class="imgflex">
+        <p class="txt">Tweak your raccoons temperement, gender, and style here<br>before you're off and playing together!</p>
+    </div>
+
+    <div class="card sleepy">
+        <img src="images/hungrypix/sleepcheck.png" alt="sleeprac" id="sleepy" class="imgflex">
+       <p class="txt">Sometimes your raccoon will be sleepy! There are lots of options to choose from<br> on how you will react - but remember,
+        sleep is good and healthy for young raccoons!</p>
+    </div>
+
+    <div class="card foodops">
+        <img src="images/hungrypix/foodoptions.png" alt="foodoptions" id="food" class="imgflex">
+        <p class="txt foodtxt">And of course, raccoons get hungry frequently!<br>There's nothing quite as magnificent as a hungry raccoon,<br>ready and willing to tear
+        into anything that may seem even remotely appetizing.<br>Pick from lots of classic raccoon favorites and feed them!</p> 
+    </div>
+
+    <div class="card playops">
+        <img src="images/hungrypix/playscreen.png" alt="playoptions" id="play" class="imgflex">
+        <p class="txt playtxt">Raccoons, also famously, LOVE to play!<br>Entertain your raccoon with some good ol' fashioned horseplay!<br>Again,
+        we have plenty of classix to choose from.</p>
+    </div>
+</div>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.flexgrid').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    appendDots: $(".flexgrid")
+    //autoplay: true,
+    //autoplaySpeed: 3000
+    });
+});
+</script>
+<script>
+  $('.card img').mouseover(function () {
+    $('.txt').show();
+}).mouseout(function () {
+   $('.txt').hide();
+});
+</script>
+
+
+
+
+  </body>
+  </html>

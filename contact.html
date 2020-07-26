@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/normalizee.css">
+  <link rel="stylesheet" href="stellarnav-master/css/stellarnav.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap">
+  </head>
+
+  <body>
+     
+    <div class="introtop stellarnav"> 
+    <nav>
+        <ul class="navbar">
+          <li><a href=project.html title="let's go!" class="normal"></a></li>
+          <li><a href="#" title="my portfolio" class="port"></a></li>
+          <li><a href="listicle.html" title="wow yeah!" class="lists"></a></li>
+          <li><a href="hungry.html" title="I&nbsp;am!" class="hung"></a></li>
+          <li><a href="contact.html" title="fax me" class="contact"></a></li>
+        </ul>
+  </nav>
+    </div>
+<div class="container">  
+    <div class="headcontain">
+        <img src="images/magritte.jpeg" alt="magrittetheblankpage" id="magritte">
+        <div class="headinfo">
+        <header class= "introtop">
+            <h1>Send me a message!</h1>
+            <h2>Fill out this form here or email me directly - kendall.bendheim@gmail.com</h2>
+        </header>
+        </div>
+    </div> 
+
+    <form action="#" method="POST"> 
+        <fieldset>
+    <legend class="conhead">your info</legend> 
+        <div class="firstsec">
+           <label for="fullname" class="cats">name</label><br>
+           <input type="text" id="fullname" name="fullname" class="content" placeholder="ex. Luther McBeezle" required><br>
+           <label for="email" class="cats" >email</label><br>
+           <input type="email" id="email" name="email" class="content" placeholder="ex. nancyrox2007@hotbeat.co"  required><br>
+            <label for="message" class="message"></label>
+            <textarea id="message" name="message" rows="5" cols="25" placeholder="what's up" required>
+            </textarea><br>
+            <input type="submit" name="signup" value="send that message!" title="&#10084;">
+        </fieldset>
+</div> 
+        <footer>
+            <p>&#169; Kendall Bendheim 2020</p>
+          </footer>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="stellarnav-master/js/stellarnav.min.js"></script>
+  <script>
+    type="text/javascript">
+	jQuery(document).ready(function($) {
+		jQuery('.stellarnav').stellarNav({
+      breakpoint: 768,
+    });
+	});
+  </script>
+  <script src="jQuery-Plugin-To-Create-Sparkling-Stars-Animations-Canvas-Sparkles/dist/jquery-canvas-sparkles.min.js"></script>
+  <script>
+    $(document).ready(function() {
+  $(".headcontain").sparkle({
+    color: ["#2eafea","#e56604"],
+    count: 30,
+    overlap: 0,
+    speed: 1,
+    minSize: 8,
+    maxSize: 15,
+    direction: "both" });
+  });
+  </script>        
+  </body>
+  </html>

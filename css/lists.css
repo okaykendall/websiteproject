@@ -1,0 +1,408 @@
+
+/* ~~~~~~~~ Gen Layout styles ~~~~~~~~ */
+
+* {
+    box-sizing: border-box; 
+  }
+  
+  nav {
+      font-family: "Prata", Times, serif;
+      text-transform: lowercase;
+  }
+  
+  body {
+      background: #F5998E;
+  }
+
+  a {
+    text-decoration: none;
+    color: #Afd1d1;
+    transition: color .3s;
+}
+
+/* ~~~~~~~~ Nav styles ~~~~~~~~ */
+
+a:hover {
+    color: palegreen;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.normal:after {
+    content: "home";
+}
+
+.normal:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+.port:after {
+    content: "consult";
+}
+
+.port:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+.lists:after {
+    content: "listicles";
+}
+
+.lists:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+.hung:after {
+    content: "who's\0020hungry?";
+}
+
+.hung:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+.contact:after {
+    content: "contact";
+}
+
+.contact:hover:after {
+    content:attr(title);
+    position: relative;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav li {
+    border: 1px solid black;
+    box-shadow: 5px 5px 2px #888888;
+    background-color: palegoldenrod;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* ~~~~~~~~ Header styles ~~~~~~~~ */
+
+h1 {
+    text-align: center;
+    background-image: url(../images/drip.png);
+    background-position: 50% 70%;
+    background-size: 88%;
+    background-blend-mode: lighten;
+    margin: 15px 5px 5px 5px;
+    font-size: 25px;
+    width: 100%;
+    padding: 1em 2em 1em 2em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    max-width: 100%;
+    transition: color 1s;
+}
+
+h1:hover {
+color: purple;
+}
+
+/* ~~~~~~~~ List title styles ~~~~~~~~ */
+
+
+.animaltitle, .nicktitle, .girls-title {
+    font-family: "Prata", Times, serif;
+    line-height: 1.5em;
+    color: cornsilk;
+    display: flex;
+    padding-left: 1em;
+}
+
+/* ~~~~~~~~ Listy styles ~~~~~~~~ */
+
+.list-digits {
+    color: midnightblue;
+    font-family: "Prata", Times, serif;
+    font-size: 70px;
+    float: left;
+    line-height: 2em;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-left: 3px;
+    padding-bottom: 5px;
+    height: auto;
+}
+
+.list-scrip {
+    font-style: italic;
+}
+
+ol {
+    font-family: "EB Garamond", Times, serif;
+    padding-left: 30px;
+}
+
+ol li {
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+}
+
+.first-letter {
+    color: olivedrab;
+    float: left;
+    font-family: "Prata", Times, serif;
+    font-size: 70px;
+    line-height: 60px;
+    padding-right: 3px;
+    padding-top: 6px;
+}
+
+/* ~~~~~~~~ 1st --- Listy styles ~~~~~~~~ */
+
+.animaltitle {
+    margin-top: 2em;
+}
+
+.animallist {
+    border-bottom: 1px solid black;
+    margin-top: .5em;
+    margin-right: .5em;
+    padding-bottom: .5em;
+}
+
+
+/* ~~~~~~~~ 2nd --- Listy styles ~~~~~~~~ */
+
+.slenderimg {
+    width: 40%;
+    float: right;
+}
+
+.nick9 {
+    line-height: 1.5em;
+}
+
+.nicktitle {
+    margin-right: 5px;
+    max-width: 100%;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.nickscrip {
+    text-align: left;
+    float: left;
+    font-size: 18px;
+}
+
+ .nclist {
+    margin-bottom: 1em;
+    margin-top: .5em;
+    border-bottom: 1px solid black;
+    height: auto;
+    padding-bottom: 1em;
+    overflow: auto;
+}
+
+/* ~~~~~~~~ 3rd --- Listy styles ~~~~~~~~ */
+
+.girls-title{
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.voodoo {
+    width: 45%;
+    float: left;
+
+}
+
+.girls-scrip {
+    float: right;
+}
+
+.girls-6 {
+    line-height: 1.5em;
+    display: inline-block;
+}
+
+.blood {
+    display: flex;
+    position: relative;
+    right: -130px;
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: palegoldenrod;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: space-between;
+    }    
+    
+    nav li {
+        border: none;
+        font-size: small;
+        color: black;
+        background-color: palegoldenrod;
+        box-shadow: none;  
+    }
+
+    h1 {
+        text-align: center;
+        background-image: url(../images/drip.png);
+        background-position: 50% 65%;
+        background-size: 61%;
+        background-blend-mode: lighten;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        font-size: 25px;
+        width: 100%;
+        height: 182px;
+        padding-right:1em;
+        padding-left: 1em;
+        padding-bottom: 1px;
+        padding-top: 1.5em;
+        font-weight: lighter;
+        letter-spacing: 1px; 
+        border: none;
+        max-width: 768px;
+    }
+
+.list-1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    border-bottom: 1px solid black;
+}
+
+.animaltitle {
+    justify-self: flex-end;
+    flex-grow: 1;
+    height: auto;
+}
+
+.animallist {
+    justify-self: flex-start;
+    flex-grow: 2;
+    border: none;
+}
+
+.list-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1em;
+    border-bottom: 1px solid black;
+}
+
+.nicktitle {
+    justify-self: flex-end;
+    width: 50%;
+}
+
+.nclist {
+    justify-self: flex-start;
+    border: none;
+}
+
+.list-3 {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.girls-title {
+    display: flex;
+    flex-basis: auto;
+}
+
+.girls-6 {
+    display: flex;
+}
+
+.girlslist {
+    flex-grow: 1;
+}
+
+.girls-scrip {
+    flex-wrap: wrap;
+    width: 30%;
+    flex-basis: auto;
+}
+
+.voodoo {
+    width: 45%;
+    align-self: baseline;
+    justify-self: center;
+}
+
+}
+
+@media (min-width: 1024px) { 
+
+h1 {
+display: flex;
+justify-content: center;
+height: 220px;
+background-size: 43%;
+background-position: 50% 64%;
+margin: 0 auto;
+padding-top: 4em;
+max-width: 1278px;
+}
+
+.listsec {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.list-1 {
+    padding-top: 2em;
+    margin-top: 1px;
+    flex-basis: 1;
+}
+
+.list-3{
+    order: 1;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.slenderimg {
+width: 30%;
+float: right;
+}
+
+.nclist {
+    float: left;
+}
+
+.girls-title {
+    float: left;
+}
+
+.girls-scrip {
+    float: right;
+}
+
+
+
+
+
+
+
+}

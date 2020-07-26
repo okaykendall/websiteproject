@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kendall Bendheim</title>
+  <link rel="stylesheet" href="css/normalizee.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="css/bake.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap">
+  </head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+          <li><a href="project.html" title="let's go!" class="normal"></a></li>
+          <li><a href="#" title="my portfolio" class="port"></a></li>
+          <li><a href="listicle.html" title="wow yeah!" class="lists"></a></li>
+          <li><a href="hungry.html" title="I&nbsp;am!" class="hung"></a></li>
+          <li><a href="contact.html" title="fax me" class="contact"></a></li>
+        </ul>
+  </nav>
+
+<header>
+ <span id="headstuff"><h1>Baked Goods</h1>
+  <h2>By Big Yum LLC &#8482;</h2>
+</header>
+
+  <div class="carousel">
+    <div class="content">
+        <img src="baking-pix/gorg.png" alt="blueberrycake" id="bloobcake1" class="bakepix">
+        <p class="info odd"><span class="first-letter">S</span>unlit Vanilla Cake with Lemon Frosting and Bloobs</p>
+    </div>
+    <div class="content">
+        <img src="baking-pix/blackberry.png" alt="blackberrycreamchzcake" id="blackberry" class="bakepix">
+        <p class="info even"><span class="first-letter">C</span>ream Cheese Frosted Cake with Raspeberries and Salted Dark Chocolate</p>
+    </div>
+    <div class="content">
+        <img src="baking-pix/strawb.png" alt="strawberryshortcake" id="strawberry" class="bakepix">
+        <p class="info odd"><span class="first-letter">S</span>trawberry Shortcake</p>
+    </div>
+    <div class="content">
+        <img src="baking-pix/bloob.png" alt="creamycake" id="creamycake" class="bakepix">
+        <p class="info even"><span class="first-letter">T</span>riple Layered Creamy Blueberry Jam Cake</p>
+    </div>
+    <div class="content">
+        <img src="baking-pix/purplebloob.png" alt="purplebloob" id="purplebloob" class="bakepix">
+        <p class="info odd"><span class="first-letter">D</span>ouble Layered Blueberry Cake with Dark Chocolate Drizzle</p>
+    </div>
+    <div class="content">
+        <img src="baking-pix/applepie.png" alt="smileyfaceapplepie" id="applepie" class="bakepix">
+        <p class="info even"><span class="first-letter">H</span>appy Apple Pie aka "Happle Pie"</p>
+    </div>
+  </div>
+
+  <footer></footer>
+
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    appendDots: $(".carousel"),
+    //autoplay: true,
+    //autoplaySpeed: 3000
+    });
+});
+</script>
+<script src="jQuery-Plugin-To-Create-Sparkling-Stars-Animations-Canvas-Sparkles/dist/jquery-canvas-sparkles.min.js"></script>
+<script>
+  $(document).ready(function() {
+$(".bakepix").sparkle({
+  color: ["#2eafea","#e56604"],
+  count: 30,
+  overlap: 0,
+  speed: 1,
+  minSize: 8,
+  maxSize: 15,
+  direction: "both" });
+});
+</script>
+<!---
+<script>   
+$(".content").hover(function() {
+    $(".info").animate({
+        opacity: 1,
+        height: "easeIn"
+    }, 1000, function(){
+    });
+});
+</script>
+-->
+</body>
+</html>
